@@ -5,6 +5,7 @@ import Search from "../screens/search";
 import Saved from "../screens/saved";
 import Filter from "../screens/filter";
 import { Ionicons } from '@expo/vector-icons';
+import ProductList from "../components/ProductsList";
 
 // Tab
 const Tab = createBottomTabNavigator();
@@ -31,7 +32,7 @@ function TabGroup() {
             tabBarInactiveTintColor: "gray"
             })}>
             <Tab.Screen name="Home" component={Home}/>
-            <Tab.Screen name="Search" component={Search} />
+            <Tab.Screen name="Search" component={ProductList} />
             <Tab.Screen name="Saved" component={Saved} />
             <Tab.Screen name="Filter" component={Filter} />
         </Tab.Navigator>
